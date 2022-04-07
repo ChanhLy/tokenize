@@ -24,7 +24,7 @@ io.on('connection', (socket) => {
   getBinanceData(socket);
 });
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 
 function getBinanceData(socket) {
   axios
