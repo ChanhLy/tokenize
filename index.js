@@ -10,7 +10,6 @@ app.use(serve('./dist'));
 const server = http.createServer(app.callback());
 const io = new Server(server, {
   allowEIO3: true,
-  cors: { credentials: true, origin: 'http://localhost:3001' },
 });
 
 let interval;
