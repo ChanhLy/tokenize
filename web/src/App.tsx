@@ -4,7 +4,7 @@ import axios from 'axios'
 import { io } from "socket.io-client";
 import { useEffect, useState } from 'react';
 
-const socket = io("http://localhost:3000");
+const socket = io();
 
 type Data = { bids: [number, number][], asks: [number, number][], totalAsks: number, totalBids: number }
 
