@@ -33,7 +33,7 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          {data?.bids.map(([size, bid]) => (
+          {data?.bids.map(([bid, size]) => (
             <tr>
               <td>{size}</td>
               <td>{bid}</td>
@@ -55,7 +55,7 @@ function App() {
           </tr>
         </thead>
         <tbody>
-        {data?.asks.map(([size, bid]) => (
+          {data?.asks.map(([size, bid]) => (
             <tr>
               <td>{size}</td>
               <td>{bid}</td>

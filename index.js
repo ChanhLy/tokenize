@@ -38,8 +38,9 @@ function getBinanceData(socket) {
 
       for (let i = 1; i < 10; i++) {
         const lastBidPrice = data.bids[i - 1][0];
-        const bid = Number(lastBidPrice) - Math.random() / 1000000;
-        const ask = Number(lastBidPrice) + Math.random() / 1000000;
+        const lastAskPrice = data.asks[i - 1][0];
+        const bid = Number(lastBidPrice) - (Math.random() / 1000000);
+        const ask = Number(lastAskPrice) + (Math.random() / 1000000);
 
         const bidPrize = String(bid).slice(0, 10);
         const bidSize = String(Math.random()).slice(0, 10);
