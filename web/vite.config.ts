@@ -14,7 +14,7 @@ const proxy: Record<string, string | ProxyOptions> = {
 export default defineConfig({
   plugins: [react()],
   server: {
-    proxy,
+    // proxy,
   },
   build: {
     outDir: '../dist',
